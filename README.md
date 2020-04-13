@@ -5,17 +5,50 @@
 
 ## Examples
 
-### example1.py
+### `example1.py`: Simple Animation
 
 ![ex1](./fig/pyof_example1.gif)
 
-### example2.py
+```python
+import sys
+import numpy as np
+
+sys.path.append('../bin')
+import pyof as of
+
+
+class ofApp(of.ofPyBaseApp):
+    def setup(self):
+        of.ofSetWindowTitle('Hello, openFrameworks!')
+        self.x = 0.0
+        self.y = 0.0
+
+    def update(self):
+        t = of.ofGetFrameNum()
+        self.x = 200 + 100 * np.cos(t * 0.1)
+        self.y = 200 + 100 * np.sin(t * 0.1)
+
+    def draw(self):
+        of.ofDrawCircle(self.x, self.y, 40)
+
+# ~~~~~~~~
+
+if __name__ == '__main__':
+    app = ofApp()
+    app.run(400, 400, of.OF_WINDOW)
+```
+
+### `example2.py`: Numpy SIMD operations and Scipy Functions
 
 ![ex2](./fig/pyof_example2.gif)
 
-### example3.py
+
+### `example3.py`: Machine Learning Package (GPy)
 
 ![ex3](./fig/pyof_example3.gif)
+
+GPy: https://sheffieldml.github.io/GPy/
+
 
 ## Usage
 
@@ -31,4 +64,3 @@
 1. Set a path to your python to env `PYTHONPATH`
 2. Put this project into `<oF_root>/apps/myApps`
 3. Open `pyof.sln` and run build
-
