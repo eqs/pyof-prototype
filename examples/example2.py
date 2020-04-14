@@ -47,39 +47,6 @@ class ofApp(of.ofPyBaseApp):
         for x, y in self.p_list:
             of.ofDrawCircle(x, y, 8)
 
-    def keyPressed(self, key):
-        pass
-
-    def keyReleased(self, key):
-        pass
-
-    def mouseMoved(self, x, y):
-        pass
-
-    def mouseDragged(self, x, y, button):
-        pass
-
-    def mousePressed(self, x, y, button):
-        pass
-
-    def mouseReleased(self, x, y, button):
-        pass
-
-    def mouseEntered(self, x, y):
-        pass
-
-    def mouseExited(self, x, y):
-        pass
-
-    def windowResized(self, w, h):
-        pass
-
-    def dragEvent(self, e):
-        pass
-
-    def gotMessage(self, msg):
-        pass
-
 
 if __name__ == '__main__':
     app = ofApp()

@@ -38,7 +38,6 @@ class ofApp(of.ofPyBaseApp):
     def draw(self):
         of.ofDrawCircle(self.x, self.y, 40)
 
-# ~~~~~~~~
 
 if __name__ == '__main__':
     app = ofApp()
