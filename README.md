@@ -3,6 +3,13 @@
 * **This repository is not an official openFrameworks repository.**
 * Only part of functions of openFrameworks are implemented.
 
+## Link
+
+* (in Japanese) openFrameworksのアプリケーションをPythonのライブラリとして呼び出す実験｜eqs｜note
+  * https://note.com/eqs/n/n0edb73ac1383
+* guoguofish/pyOF: Python binding for openFrameworks
+  * https://github.com/guoguofish/pyOF
+
 ## Examples
 
 ### `example1.py`: Simple Animation
