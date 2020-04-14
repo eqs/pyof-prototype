@@ -26,5 +26,11 @@
     <ClInclude Include="src\pybind_graphics.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="src\pybind_types.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pybind_math.h">
+      <Filter>src</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
